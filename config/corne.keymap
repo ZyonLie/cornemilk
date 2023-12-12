@@ -38,7 +38,7 @@
 &kp TAB     &kp F1  &kp F2   &kp F3       &kp F4   &kp LEFT_PARENTHESIS     &kp ASTERISK   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS      &kp BSPC
 &kp CLCK    &kp F5  &kp F6   &kp F7       &kp F8   &kp RIGHT_PARENTHESIS    &kp KP_DIVIDE  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SUBTRACT  &trans
 &kp LA(F4)  &kp F9  &kp F10  &kp F11      &kp F12  &kp LG(D)                &kp KP_EQUAL   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &to 4
-                             &kp LA(TAB)  &mo 3    &kp SPACE                &kp RET        &kp KP_NUMBER_0  &kp KP_COMMA
+                             &kp LA(TAB)  &trans   &kp SPACE                &kp RET        &kp KP_NUMBER_0  &kp KP_COMMA
             >;
         };
 
@@ -53,7 +53,7 @@
 &kp GRAVE  &kp EXCLAMATION  &kp AT          &kp HASH      &kp DLLR     &kp PRCNT        &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LESS_THAN         &kp GREATER_THAN   &trans
 &trans     &kp HOME         &kp KP_NUMLOCK  &kp UP_ARROW  &kp K_SLEEP  &kp PAGE_UP      &kp MINUS  &kp EQUAL  &kp PIPE         &kp LEFT_BRACE        &kp RIGHT_BRACE    &trans
 &trans     &kp END          &kp LEFT_ARROW  &kp DOWN      &kp RIGHT    &kp PAGE_DOWN    &kp UNDER  &kp PLUS   &kp BACKSLASH    &kp RS(LEFT_BRACKET)  &kp RIGHT_BRACKET  &trans
-                                            &kp LGUI      &trans       &kp SPACE        &kp RET    &mo 3      &kp RALT
+                                            &kp LGUI      &mo 3        &kp SPACE        &kp RET    &trans     &kp RALT
             >;
         };
 
@@ -82,6 +82,15 @@
 &kp LA(F4)  &trans        &kp N7        &kp N8  &kp N9        &kp N0          &kp F7          &kp F8    &kp F9        &kp F10    &kp F11           &kp F12
                                         &trans  &trans        &trans          &trans          &trans    &trans
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        activate_btlayer {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };

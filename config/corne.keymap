@@ -9,6 +9,15 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    behaviors {
+        shift_to_caps: shift_to_caps {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SHIFT_TO_CAPS";
+            #binding-cells = <0>;
+            bindings = <&kp LSHFT>, <&kp CAPS>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 

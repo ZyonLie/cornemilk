@@ -14,7 +14,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SHIFT_TO_CAPS";
             #binding-cells = <0>;
-            bindings = <&kp LSHFT>, <&kp CAPS>;
+            bindings = <&kp LSHFT>, <&kp CLCK>;
         };
     };
 

@@ -35,10 +35,10 @@
 
             label = "Alpha";
             bindings = <
-&kp TAB     &kp Q               &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I         &kp O    &kp P            &kp BSPC
-&kp CAPS    &hrm LSHFT A        &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K         &kp L    &hrm LSHFT SEMI  &kp SINGLE_QUOTE
-&bt BT_NXT  &mt LEFT_CONTROL Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA     &kp DOT  &kp SLASH        &kp K_SLEEP
-                                       &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp LEFT_ALT
+&kp TAB     &kp Q                &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I         &kp O    &kp P                    &kp BSPC
+&kp CAPS    &hrm LSHFT A         &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K         &kp L    &hrm LSHFT SEMI          &kp SINGLE_QUOTE
+&bt BT_NXT  &hrm LEFT_CONTROL Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA     &kp DOT  &hrm LEFT_CONTROL SLASH  &kp K_SLEEP
+                                        &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp LEFT_ALT
             >;
         };
 

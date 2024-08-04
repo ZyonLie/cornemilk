@@ -32,10 +32,10 @@
 
             label = "Alpha";
             bindings = <
-&kp TAB    &kp Q        &kp W  &kp E            &kp R      &kp T              &kp Y    &kp U            &kp I         &kp O    &kp P                &kp BSPC
-&kp CAPS   &mt LSHFT A  &kp S  &kp D            &kp F      &kp G              &kp H    &kp J            &kp K         &kp L    &mt LSHFT SEMICOLON  &kp ENTER
-&kp GRAVE  &mt LCTRL Z  &kp X  &kp C            &kp V      &kp B              &kp N    &kp M            &kp COMMA     &kp DOT  &mt LCTRL SLASH      &kp APOS
-                               &mt LGUI ESCAPE  &lt 1 TAB  &mt LSHFT SPACE    &kp RET  &lt 2 BACKSPACE  &kp LEFT_ALT
+&none  &kp Q        &kp W  &kp E            &kp R      &kp T        &kp Y    &kp U            &kp I         &kp O    &kp P                &none
+&none  &mt LSHFT A  &kp S  &kp D            &kp F      &kp G        &kp H    &kp J            &kp K         &kp L    &mt LSHFT SEMICOLON  &none
+&none  &mt LCTRL Z  &kp X  &kp C            &kp V      &kp B        &kp N    &kp M            &kp COMMA     &kp DOT  &mt LCTRL SLASH      &none
+                           &mt LGUI ESCAPE  &lt 1 TAB  &kp SPACE    &kp RET  &lt 2 BACKSPACE  &kp LEFT_ALT
             >;
         };
 
@@ -48,10 +48,10 @@
 
             label = "Fn + Num";
             bindings = <
-&trans      &kp K_MUTE         &kp KP_NUMLOCK  &kp UP_ARROW      &trans      &kp LEFT_PARENTHESIS     &kp ASTERISK   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS      &kp BSPC
-&kp LSHFT   &kp K_VOLUME_UP    &kp LEFT        &kp DOWN          &kp RIGHT   &kp RIGHT_PARENTHESIS    &kp KP_DIVIDE  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SUBTRACT  &kp ESC
+&trans      &kp K_MUTE         &kp KP_NUMLOCK  &kp UP_ARROW      &trans      &kp LEFT_PARENTHESIS     &kp ASTERISK   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS      &trans
+&trans      &kp K_VOLUME_UP    &kp LEFT        &kp DOWN          &kp RIGHT   &kp RIGHT_PARENTHESIS    &kp KP_DIVIDE  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SUBTRACT  &trans
 &kp LA(F4)  &kp K_VOLUME_DOWN  &kp K_PREV      &kp K_PLAY_PAUSE  &kp K_NEXT  &kp PRINTSCREEN          &kp EQUAL      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &to 4
-                                               &kp LA(TAB)       &trans      &kp LG(D)                &kp RET        &kp KP_NUMBER_0  &kp KP_COMMA
+                                               &kp CAPS          &trans      &kp LG(D)                &kp RET        &kp KP_NUMBER_0  &kp KP_COMMA
             >;
         };
 
@@ -84,20 +84,20 @@
         Game_0 {
             label = "Game";
             bindings = <
-&kp ESCAPE  &kp TAB           &kp Q  &kp W         &kp E  &kp R        &kp Y      &kp U         &kp I      &kp O       &kp P          &kp T
-&kp GRAVE   &kp LEFT_SHIFT    &kp A  &kp S         &kp D  &kp F        &kp H      &kp J         &kp K      &kp L       &kp SEMICOLON  &kp G
-&kp B       &kp LEFT_CONTROL  &kp Z  &kp X         &kp C  &kp V        &kp N      &kp M         &kp COMMA  &kp PERIOD  &kp SLASH      &kp CLCK
-                                     &kp LEFT_ALT  &mo 5  &kp SPACE    &kp ENTER  &kp LEFT_GUI  &to 0
+&trans  &kp TAB           &kp Q  &kp W                &kp E  &kp R        &kp Y      &kp U         &kp I      &kp O       &kp P          &trans
+&trans  &kp LEFT_SHIFT    &kp A  &kp S                &kp D  &kp F        &kp H      &kp J         &kp K      &kp L       &kp SEMICOLON  &trans
+&trans  &kp LEFT_CONTROL  &kp Z  &kp X                &kp C  &kp V        &kp N      &kp M         &kp COMMA  &kp PERIOD  &kp SLASH      &trans
+                                 &mt LEFT_ALT ESCAPE  &mo 5  &kp SPACE    &kp ENTER  &kp LEFT_GUI  &to 0
             >;
         };
 
         Game_1 {
             label = "Game Asc";
             bindings = <
-&kp ESCAPE  &kp NUMBER_1  &kp NUMBER_2  &trans  &kp NUMBER_3  &kp NUMBER_4    &kp F1          &kp F2    &kp F3        &kp F4     &kp F5            &kp F6
-&kp M       &kp N5        &trans        &trans  &trans        &kp NUMBER_6    &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&kp L       &trans        &kp N7        &kp N8  &kp N9        &kp N0          &kp F7          &kp F8    &kp F9        &kp F10    &kp F11           &kp F12
-                                        &trans  &trans        &trans          &trans          &trans    &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &trans     &kp NUMBER_3  &kp NUMBER_4    &kp F1  &kp F2   &kp F3   &kp F4   &none            &trans
+&trans  &trans        &trans        &trans     &trans        &kp NUMBER_5    &kp F5  &kp F6   &kp F7   &kp F8   &none            &trans
+&trans  &trans        &trans        &kp B      &kp G         &kp T           &kp F9  &kp F10  &kp F11  &kp F12  &kp LS(LC(DEL))  &kp LA(F4)
+                                    &kp GRAVE  &trans        &trans          &trans  &trans   &trans
             >;
         };
     };

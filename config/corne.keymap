@@ -8,21 +8,12 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-&mt { tapping-term-ms = <180>; };
+&mt {
+    tapping-term-ms = <180>;
+    flavor = "tap-preferred";
+};
 
 / {
-    behaviors {
-        hrm: hrm {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HRM";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <180>;
-            flavor = "balanced";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -35,10 +26,10 @@
 
             label = "Alpha";
             bindings = <
-&kp TAB     &kp Q                &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I         &kp O    &kp P                    &kp BSPC
-&kp CAPS    &hrm LSHFT A         &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K         &kp L    &hrm LSHFT SEMI          &kp SINGLE_QUOTE
-&kp ESCAPE  &hrm LEFT_CONTROL Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA     &kp DOT  &hrm LEFT_CONTROL SLASH  &kp GRAVE
-                                        &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp LEFT_ALT
+&kp TAB     &kp Q        &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I         &kp O    &kp P                &kp BSPC
+&kp CAPS    &mt LSHFT A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K         &kp L    &mt LSHFT SEMICOLON  &kp SINGLE_QUOTE
+&kp ESCAPE  &mt LCTRL Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA     &kp DOT  &mt LCTRL SLASH      &kp GRAVE
+                                &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp LEFT_ALT
             >;
         };
 
@@ -67,10 +58,10 @@
 
             label = "Symbol";
             bindings = <
-&trans  &kp F1         &kp F2   &kp F3    &kp F4   &kp MINUS        &kp EXCL   &kp AT         &kp HASH       &kp DOLLAR        &kp PERCENT        &trans
-&trans  &hrm LSHFT F5  &kp F6   &kp F7    &kp F8   &kp PAGE_UP      &kp CARET  &kp AMPERSAND  &kp ASTRK      &kp LESS_THAN     &kp GREATER_THAN   &trans
-&trans  &kp F9         &kp F10  &kp F11   &kp F12  &kp PAGE_DOWN    &kp GRAVE  &kp APOS       &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
-                                &kp LGUI  &mo 3    &kp SPACE        &kp RET    &trans         &kp LEFT_ALT
+&trans  &kp F1        &kp F2   &kp F3    &kp F4   &kp MINUS        &kp EXCL   &kp AT         &kp HASH       &kp DOLLAR        &kp PERCENT        &trans
+&trans  &mt LSHFT F5  &kp F6   &kp F7    &kp F8   &kp PAGE_UP      &kp CARET  &kp AMPERSAND  &kp ASTRK      &kp LESS_THAN     &kp GREATER_THAN   &trans
+&trans  &kp F9        &kp F10  &kp F11   &kp F12  &kp PAGE_DOWN    &kp GRAVE  &kp APOS       &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+                               &kp LGUI  &mo 3    &kp SPACE        &kp RET    &trans         &kp LEFT_ALT
             >;
         };
 

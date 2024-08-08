@@ -10,7 +10,7 @@
 
 &mt {
     tapping-term-ms = <180>;
-    flavor = "tap-preferred";
+    flavor = "hold-preferred";
 };
 
 &lt {
@@ -48,10 +48,10 @@
 
             label = "Fn + Num";
             bindings = <
-&trans      &kp K_MUTE         &kp KP_NUMLOCK  &kp UP_ARROW      &none       &kp LEFT_PARENTHESIS     &kp ASTERISK   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS      &trans
-&kp CAPS    &kp K_VOLUME_UP    &kp LEFT        &kp DOWN          &kp RIGHT   &kp RIGHT_PARENTHESIS    &kp KP_DIVIDE  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SUBTRACT  &trans
-&kp LA(F4)  &kp K_VOLUME_DOWN  &kp K_PREV      &kp K_PLAY_PAUSE  &kp K_NEXT  &kp PRINTSCREEN          &kp EQUAL      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &to 4
-                                               &trans            &trans      &kp LG(D)                &kp RET        &kp KP_NUMBER_0  &kp KP_COMMA
+&trans          &kp K_MUTE         &kp KP_NUMLOCK  &kp UP_ARROW      &none       &kp LEFT_PARENTHESIS     &kp ASTERISK   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS      &trans
+&mt LSHFT CAPS  &kp K_VOLUME_UP    &kp LEFT        &kp DOWN          &kp RIGHT   &kp RIGHT_PARENTHESIS    &kp KP_DIVIDE  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SUBTRACT  &trans
+&kp LA(F4)      &kp K_VOLUME_DOWN  &kp K_PREV      &kp K_PLAY_PAUSE  &kp K_NEXT  &kp PRINTSCREEN          &kp EQUAL      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &to 4
+                                                   &trans            &trans      &kp LG(D)                &kp RET        &kp KP_NUMBER_0  &kp KP_COMMA
             >;
         };
 
